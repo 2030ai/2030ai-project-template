@@ -60,6 +60,12 @@ $RECYCLE.BIN/
 # Безопасность и Логи
 # ==========================
 
+# Переменные окружения
+.env
+.env.local
+.env.*.local
+!.env.example
+
 # Логи
 *.log
 *.log*
@@ -67,6 +73,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+logs/
+
+# Временные файлы (см. agent_docs/guides/archiving-and-temp.md)
+temp/
 
 # ==========================
 # Сборка и Зависимости (Общее)
