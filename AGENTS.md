@@ -79,6 +79,13 @@
 - Специфические инструкции — в `agent_docs/`; не раздувать AGENTS.md.
 - Все проектные документы — в `agent_docs/`, кроме `README.md`, `AGENTS.md`, `CLAUDE.md`.
 
+## Project-Local Skills
+
+- Если проекту нужны локальные skills, источник истины: `.agents/skills/<name>/SKILL.md`.
+- Platform mirrors: `.claude/skills/<name>`, `.codex/skills/<name>`, `.cursor/skills/<name>` должны быть symlink на `../../.agents/skills/<name>`.
+- Не создавать новые slash-command файлы; полезные workflows оформлять как skills.
+- Manifest всегда называется `SKILL.md`.
+
 ## При начале работы
 
 - Свериться с разделом «Описание проекта» выше — это основной контекст.

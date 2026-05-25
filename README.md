@@ -1,6 +1,8 @@
-# 2030AI Project Template
+# 2030ai-project-template
 
 Шаблон проекта для разработки с ИИ-агентами: Claude Code, Codex, Cursor.
+
+GitHub slug: `2030ai/2030ai-project-template`.
 
 ## Важно
 
@@ -15,6 +17,10 @@
 ├── .editorconfig             # Единый whitespace/EOL для всех IDE
 ├── .markdownlint.json        # Конфигурация markdownlint
 ├── .github/workflows/        # CI: markdownlint
+├── .agents/skills/           # Canonical project-local skills, if needed
+├── .claude/skills/           # Claude Code symlink mirrors to .agents
+├── .codex/skills/            # Codex symlink mirrors to .agents
+├── .cursor/skills/           # Cursor symlink mirrors to .agents
 └── agent_docs/               # Проектная документация
     ├── index.md              # Навигация по документам
     ├── glossary.md           # Глоссарий проекта
@@ -41,7 +47,8 @@
 
 ## Заметки
 
-- **Symlinks для Cursor/CLINE/Windsurf не добавлены** — школа рекомендует Claude Code, остальные инструменты подтягивают `AGENTS.md` автоматически.
+- **Project-local skills:** source of truth — `.agents/skills/<name>/SKILL.md`; platform mirrors — `.claude/skills/<name>`, `.codex/skills/<name>`, `.cursor/skills/<name>` symlinks to `../../.agents/skills/<name>`.
+- **Slash commands не добавлены** — reusable agent workflows оформляются как skills, а не command-файлы.
 - **CLAUDE.md — обычный stub-файл, а не symlink** — symlinks ломаются на Windows, в `git archive` и при zip-extract.
 - **Windows-специфичные правила не добавлены** — проект настроен для macOS.
 - **Строгие правила безопасности/тестирования не добавлены** — агенты справляются сами. Добавлены: принципы работы агента (`AGENTS.md`), логирование, двухуровневая история (`development-history.md` + `adr/`), глоссарий.
