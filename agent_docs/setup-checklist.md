@@ -28,7 +28,16 @@
 
 Заполнить `agent_docs/architecture.md` или удалить, если структура проекта тривиальна и не требует описания.
 
-## 5. Очистить шаблон
+## 5. Project-local skills (если нужны)
+
+- Создать canonical source: `.agents/skills/<name>/SKILL.md`.
+- Создать platform mirrors:
+  - `.claude/skills/<name> -> ../../.agents/skills/<name>`
+  - `.codex/skills/<name> -> ../../.agents/skills/<name>`
+  - `.cursor/skills/<name> -> ../../.agents/skills/<name>`
+- Не создавать slash-command файлы; workflow оформлять как skills.
+
+## 6. Очистить шаблон
 
 - Удалить этот файл (`agent_docs/setup-checklist.md`).
 - Удалить `skill-andMCPupdater-zvasil/`, если не используется.
