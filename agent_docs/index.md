@@ -10,14 +10,15 @@
 ## Основные
 
 - `agent_docs/architecture.md` — архитектура и компоненты; актуально при изменениях системы.
-- `agent_docs/adr/` — журнал значимых решений (по файлу на решение). Индекс: `agent_docs/adr/README.md`.
-- `agent_docs/development-history.md` — журнал итераций; смотреть последнюю запись. Архив: `agent_docs/development-history-archive.md`.
+- `agent_docs/adr/` — атомарный журнал значимых решений (по файлу на решение). Правила: `agent_docs/adr/README.md`.
+- `agent_docs/development-history/` — атомарный журнал итераций (по файлу на итерацию). Правила: `agent_docs/development-history/README.md`.
 
 ## Правила и гайды
 
 - `agent_docs/guides/dod.md` — критерии завершенности (DoD).
 - `agent_docs/guides/environment-setup.md` — настройка окружения; применять при инициализации проекта.
 - `agent_docs/guides/logging.md` — логирование скриптов/интеграций.
+- `agent_docs/guides/atomic-documents.md` — правила атомарных событийных документов.
 - `agent_docs/guides/archiving-and-temp.md` — архивация и временные файлы.
 
 ## Шаблоны

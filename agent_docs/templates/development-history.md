@@ -1,24 +1,28 @@
-> Правило ротации: в `agent_docs/development-history.md` хранить только последние 10 записей; старые переносить в `agent_docs/development-history-archive.md`.
+# [YYYY-MM-DD HH:MM] Краткое описание итерации
 
-## [YYYY-MM-DD HH:MM] - Краткое описание итерации
+Файл: `agent_docs/development-history/YYYY-MM-DD-HHMM-short-title.md`
 
-### Что сделано
+## Что сделано
 
 - Конкретная задача 1
 - Конкретная задача 2
 - Конкретная задача 3
 
-### Зачем
+## Зачем
 
 Краткое объяснение цели итерации и принятых решений
 
-### Обновлено
+## Обновлено
 
 - [ ] agent_docs/architecture.md (если применимо)
-- [ ] agent_docs/adr/NNNN-title.md (если принято важное решение)
+- [ ] agent_docs/adr/YYYY-MM-DD-HHMM-title.md (если принято важное решение)
 - [ ] Тесты (если применимо)
 - [ ] Документация
 
-### Следующие шаги
+## Связанные решения
+
+- agent_docs/adr/YYYY-MM-DD-HHMM-title.md (если применимо)
+
+## Следующие шаги
 
 - Что стоит сделать далее
