@@ -15,10 +15,10 @@
 
 Применить `agent_docs/guides/environment-setup.md`:
 
-- `.vscode/settings.json` — видимость `.env` в IDE
-- `.cursorignore` — скрыть секреты от AI-агентов
-- `.gitignore` — `.env*` уже добавлен в шаблоне
-- `.env.example` — шаблон переменных
+- `.vscode/settings.json` — создать/обновить видимость `.env` в IDE
+- `.cursorignore` — проверить/обновить правила скрытия секретов от AI-агентов
+- `.gitignore` — проверить правила `.env`/`.env.*`
+- `.env.example` — проверить/обновить шаблон переменных
 
 ## 3. Глоссарий
 
@@ -40,5 +40,4 @@
 ## 6. Очистить шаблон
 
 - Удалить этот файл (`agent_docs/setup-checklist.md`).
-- Удалить `skill-andMCPupdater-zvasil/`, если не используется.
 - Обновить `README.md` под содержание своего проекта.
