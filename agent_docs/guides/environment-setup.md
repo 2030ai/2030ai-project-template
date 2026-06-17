@@ -33,8 +33,7 @@
 ```gitignore
 # Скрыть секреты от AI-агентов
 .env
-.env.local
-.env.*.local
+.env.*
 
 # Но показывать шаблон
 !.env.example
@@ -45,8 +44,7 @@
 ```gitignore
 # Переменные окружения
 .env
-.env.local
-.env.*.local
+.env.*
 !.env.example
 ```
 

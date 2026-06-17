@@ -17,6 +17,10 @@
 - Заголовок секции `.gitignore` в `environment-setup.md` выровнен на «Проверить/обновить» — как соседние peer-секции `.cursorignore` и `.env.example`.
 - Персональный namespace `skill-andMCPupdater-zvasil/` убран из коммитимого `.gitignore` (переносимость шаблона) в локальный `.git/info/exclude`.
 
+### Правки по medium-review
+
+- `.cursorignore`, `.gitignore` и `environment-setup.md` переведены с точечных `.env.local`/`.env.*.local` на `.env` + `.env.*`, чтобы скрывать `.env.production`, `.env.staging` и другие dotenv-варианты, сохраняя `!.env.example`.
+
 ## Зачем
 
 Исправлены review findings, из-за которых template-репозиторий противоречил собственным bootstrap-правилам, обещал отсутствующие environment defaults и содержал некорректный submodule/gitlink без `.gitmodules`.

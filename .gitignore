@@ -58,8 +58,7 @@ $RECYCLE.BIN/
 
 # Переменные окружения
 .env
-.env.local
-.env.*.local
+.env.*
 !.env.example
 
 # Логи
