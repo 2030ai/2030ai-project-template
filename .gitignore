@@ -10,7 +10,6 @@
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-# Убрано сомнительное 'profile' и ошибочное '.DS_Store?'
 
 # Windows
 Thumbs.db
@@ -21,7 +20,6 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-# Исправлено *.kab -> *.cab
 
 # Linux
 *~
@@ -46,8 +44,6 @@ $RECYCLE.BIN/
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-# Обновил секцию VS Code: обычно игнорируют всё ВНУТРИ папки,
-# но сохраняют настройки проекта (settings/tasks/launch).
 
 # Vim / Emacs / Sublime
 *.swp
@@ -90,7 +86,6 @@ venv/
 .venv/
 env/
 .env/
-# Добавлено для тестов и качества кода
 .pytest_cache/
 .mypy_cache/
 .tox/
@@ -109,5 +104,6 @@ coverage/
 # Go / Lua / Misc (Опционально)
 # ==========================
 
-main # Если бинарник называется main
+# Если бинарник называется main
+/main
 luac.out
