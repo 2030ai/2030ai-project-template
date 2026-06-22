@@ -84,6 +84,7 @@
 
 - Если проекту нужны локальные skills, источник истины: `.agents/skills/<name>/SKILL.md`.
 - Platform mirrors: `.claude/skills/<name>`, `.codex/skills/<name>`, `.cursor/skills/<name>` должны быть symlink на `../../.agents/skills/<name>`.
+- Skill metadata должна показывать ту же slash-команду, которую вызывает пользователь: `name: <command>`, description начинается с `/<command>`, первый H1 — `# /<command>`, `agents/openai.yaml display_name: "/<command>"`.
 - Не создавать новые slash-command файлы; полезные workflows оформлять как skills.
 - Manifest всегда называется `SKILL.md`.
 
